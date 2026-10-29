@@ -1,4 +1,3 @@
-
 console.log("First will learn about Array items Access");
 let fruits = ["Apple","banana","Orange"];
 
@@ -20,15 +19,34 @@ fruits.pop("banana"); // i tried passing the key or value it doesn't affect the 
 fruits.pop();
 console.log(fruits);
 
+fruits.push("almonds",'peantus')
+console.log(fruits);
+
+// what if i want to change/remove the value from the between of array then i have to use splice method :  eg: array.splice(indexPosition,deleteCountValue,AddValue)
+
+fruits.splice(2,2,"KIWI");  // this means (startFromtheIndex2,removeCount orange,almonds, add Kiwi on remove index)
+
+console.log(fruits);
 
 
+let grocery = [['Milk','bread','butter'],['perfumes','showergel','Shirt']];
 
+console.log(grocery);
+// how to call multiple value with array index eg: milk,shirt?
+console.log(grocery[0][0],grocery[1][2]);
 
+// Call butter or whole second index ?
+console.log(grocery[0][2],grocery[1]);
+// add Vivo and nokia in lists ?
+grocery[0].push('Vivo');
+grocery[1].push('Nokia');
 
+console.log(grocery);
 
+// replace Bread to brown bread ?
 
+grocery[0].splice(1,1,'Brown Bread'); 
+console.log(grocery);
+grocery.splice(grocery[0][1],1,'Brown Bread'); // thought it will work as above but no it didn't worked as above whereas it remove the whole 0 index and add brown bread
 
-
-
-
-
+console.log(grocery);

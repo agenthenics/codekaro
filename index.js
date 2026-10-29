@@ -1,3 +1,4 @@
+
 console.log("First will learn about Array items Access");
 let fruits = ["Apple","banana","Orange"];
 
@@ -50,3 +51,42 @@ console.log(grocery);
 grocery.splice(grocery[0][1],1,'Brown Bread'); // thought it will work as above but no it didn't worked as above whereas it remove the whole 0 index and add brown bread
 
 console.log(grocery);
+
+console.log(typeof grocery); // in javascript array are objects
+
+// G.Q why in javascript arrays are objects => JS is a prototype-based language, so there are only primitive types and objects. It grants flexibility but makes things more confusing at the same time
+
+let users = {
+  name : 'ASHISH BASURI'
+};
+
+console.log(users);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

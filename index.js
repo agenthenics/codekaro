@@ -94,9 +94,47 @@ let candidate = [
 let randomIndex = Math.floor(Math.random() * candidate.length); 
 console.log(candidate[randomIndex]);
 
+// condition in js
+let age = 28;
+// console.log(age);
+
+// G.A Check Age conditional to go on a Date ?
+
+if(age>26){
+  console.log('You can go on a Date');
+}else{
+console.log('No Dating Allowed');
+}
+
+// condition work for two => And , OR example 
+// And means when all the condition are truee , it could have more than one condition else false
+// OR means when any one condition is true out of any other conditions else false
+//    OR
+// And => when both the condition are true else false
+// OR => When one out of condition is true else false
+
+if(true){
+	console.log('Life is beautiful');
+}else{
+console.log('Life is sad');
+}
+
+let Aage = 24; let money = 300;
+if(Aage >= 26 && money>=500){
+  console.log('You are dating young person who is energetic with money and hard working');
+}else if(Aage < 26 || money<= 300){
+  console.log('You are dating young person who is energetic but with less money and  less confidence untill he improves the skill with real life experience');
+}else{
+	console.log('Just be friend, not enough to date anybody')
+}
 
 
+// now starts with ternary operator
+let check$ = 35;
+let valueess = (check$ == 30) ? 'its 30 rupees' : (check$ < 30) ? 'Less then 30 rupees' : 'Greater than 30 rupees';
+console.log(valueess);
 
+// 
 
 
 

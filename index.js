@@ -57,10 +57,24 @@ console.log(typeof grocery); // in javascript array are objects
 // G.Q why in javascript arrays are objects => JS is a prototype-based language, so there are only primitive types and objects. It grants flexibility but makes things more confusing at the same time
 
 let users = {
-  name : 'ASHISH BASURI'
+  name : 'ASHISH BASURI',
+  age:'28',
+  address:'mumbai',
+  hobby:['cycling','swimming'],
+	travel:['Rajasthan','Mysore']
+
+
 };
 
+// add one more value eg:pichole lake as place
+
+users.place='pichole lake';
+// users.push({place});
 console.log(users);
+
+// console.log(users);
+// G.Q Call the users name who like swimming in rajasthan,pichole lake
+console.log(users.name+' Likes ' +users.hobby[1]+' in ' + users.travel[0] +','+  users.place); // whereas + use to concat the values
 
 
 

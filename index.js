@@ -134,7 +134,17 @@ let check$ = 35;
 let valueess = (check$ == 30) ? 'its 30 rupees' : (check$ < 30) ? 'Less then 30 rupees' : 'Greater than 30 rupees';
 console.log(valueess);
 
-// 
+//  what is double == or === ? 
+// == checks the value of the keyword and === check the datatype and value too.
+console.log('== checks the value of the keyword and === check the datatype and value too.');
+
+// what is falsly conditional
+// Falsy => 0 , -0 , "" , '' , undefined, null , nan know as false
+// anything apart from falsy is treated as truth values.
+let result = '';
+
+// console.log(boolean result);
+ 
 
 
 

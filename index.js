@@ -77,6 +77,23 @@ console.log(users);
 console.log(users.name+' Likes ' +users.hobby[1]+' in ' + users.travel[0] +','+  users.place); // whereas + use to concat the values
 
 
+//  create an array with name and email
+
+let candidate = [
+  {'name':'rohan kadam','email':'rohan@mail.com'},
+  {'name':'rajesh kadam','email':'rajesh@mail.com'},
+  {'name':'supriya jadhav','email':'supriya@mail.com'},
+  {'name':'jeevan meeca','email':'jeevan@mail.com'},
+]
+
+// console.log(candidate);
+
+// call random person name for the lottery
+// get a value with random function
+ // i forget the concept so i google it
+let randomIndex = Math.floor(Math.random() * candidate.length); 
+console.log(candidate[randomIndex]);
+
 
 
 

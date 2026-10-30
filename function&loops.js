@@ -1,24 +1,47 @@
-console.log('Functions and Loops');
+console.log('Functions and Loopss');
 
 // Assignment 1
 // Print the square of every number using a for loop.
 
 let numbers = [2, 4, 6, 8, 10, 12];
 
-// Assignment 2
+for(let i= 0;i<numbers.length;i++){
+	console.log(numbers[i]*numbers[i]);
+}
+
+// foreach function can be use with array only 
+// numbers.forEach(n=>{
+// 	console.log(n*n);
+// });
+
+
+console.log('Assignment 2');
 // Create an arrow function calculateDiscount(price) that returns the price after a 15% discount. Test it with all prices.
 
 let prices = [500, 1200, 999, 2500, 750];
+// block arrow function
+calculateDiscount = (val) => {
+let discount = val * 0.15;
+  return result = val - discount;	
+}
+
+// one way used forEach Array with arrow function
+prices.forEach(p=>{
+	console.log(calculateDiscount(p));
+})
+// single block function called
+console.log(calculateDiscount(prices[3]));
+
 // Assignment 3
 // Using forEach(), print the names of users whose age is 18 or above.
 
-// let users = [
-//   { name: "Aman", age: 16 },
-//   { name: "Priya", age: 22 },
-//   { name: "Rahul", age: 18 },
-//   { name: "Neha", age: 14 },
-//   { name: "Karan", age: 27 }
-// ];
+let userss = [
+	  { name: "Aman", age: 16 },
+  { name: "Priya", age: 22 },
+  { name: "Rahul", age: 18 },
+  { name: "Neha", age: 14 },
+  { name: "Karan", age: 27 }
+];
 
 
 // Assignment 4

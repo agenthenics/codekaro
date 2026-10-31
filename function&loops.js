@@ -109,10 +109,31 @@ for(let i=0;i<users.length;i++){
   }	
 }	
 console.log(AdultCount);
-
-
 // Number of minors (<18)
 console.log(minorCount);
 // Name of the oldest user
-
+let oldestUserName;
+let age=0;
+for(let i=0;i<users.length;i++){
+  if(age<users[i].age){
+	age = users[i].age;
+	oldestUserName = users[i].name;
+  }
+}
+console.log(oldestUserName);
 // Average age of all users
+let sumAgeUser=0;
+let average;
+let sumUser = users.forEach(function(n){
+  sumAgeUser = sumAgeUser+n.age;
+ average = sumAgeUser/users.length;
+});
+console.log(average);
+// another type of tried example
+let averageAge;
+let sumAgeUsers=0;
+for(let i=0;i<users.length;i++){
+  sumAgeUsers  = sumAgeUsers + users[i].age;
+ 	averageAge = sumAgeUsers/users.length;
+}
+console.log(averageAge);

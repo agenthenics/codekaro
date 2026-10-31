@@ -1,6 +1,6 @@
 console.log('Functions and Loopss');
 
-// Assignment 1
+console.log('Assignment 1');
 // Print the square of every number using a for loop.
 
 let numbers = [2, 4, 6, 8, 10, 12];
@@ -31,8 +31,7 @@ prices.forEach(p=>{
 })
 // single block function called
 console.log(calculateDiscount(prices[3]));
-
-// Assignment 3
+console.log('Assignment 3');
 // Using forEach(), print the names of users whose age is 18 or above.
 
 let userss = [
@@ -43,8 +42,14 @@ let userss = [
   { name: "Karan", age: 27 }
 ];
 
+userss.forEach(usr=>{
+  if(usr.age>18){
+	console.log(usr.name);
+	}
+});
 
-// Assignment 4
+
+console.log('Assignment 4');
 // Create a function calculateNetSalary(name, salary) that deducts 10% TDS and 5% PF, then returns the final in-hand salary. Call the function for every employee.
 
 let employees = [
@@ -72,10 +77,11 @@ console.log(calculateNetSalary(employees[4].name,employees[4].salary));
 
 console.log('Example 2 for in-hand salary after reducing tds and pf using loop')
 
-// foreach(employees as value){
-// 	return calculateNetSalary(value.name,value.salary);
-// }
+employees.forEach(emp=>{
+	console.log(calculateNetSalary(emp.name,emp.salary));
+});
 
+console.log('Assignment 5');
 // Assignment 5 (Hard)
 // Using the users array, print:
 
@@ -91,11 +97,22 @@ let users = [
 ];
 
 // Total users
-
+console.log(users.length);
 // Number of adults (18+)
+let AdultCount = 0;
+let minorCount = 0;
+for(let i=0;i<users.length;i++){
+  if(users[i].age>18){
+	AdultCount = AdultCount+1;
+  }else if(users[i].age<18){
+	minorCount = minorCount+1;
+  }	
+}	
+console.log(AdultCount);
+
 
 // Number of minors (<18)
-
+console.log(minorCount);
 // Name of the oldest user
 
 // Average age of all users

@@ -158,7 +158,7 @@ const movies = [
     }
   ];
   
-  console.log(movies);
+//   console.log(movies);
 
 
 // Perform the following tasks using the map(), filter(), and chaining methods:
@@ -168,21 +168,27 @@ const movies = [
 // Create a new array containing only the titles of the movies.
 let titles = movies.map(mov=>mov.title);
 console.log(titles);
-
-
 // Create a new array containing only the movie titles along with their IMDb ratings.
 let titlesimdb = movies.map( mov=>mov.title +' with imdbRating: '+ mov.imdbRating);
 console.log(titlesimdb);
 // b. Filtering:
 
 // Filter the movies to create an array of thriller movies released after the year 2000.
-
+let thrillerMovies = movies.filter(mov=>mov.year > 2000 && mov.genre ==='Thriller') 
+console.log(thrillerMovies);
 // Filter the movies to create an array of drama movies with IMDb ratings above 8.5.
-
+let dramaMoviesimdb = movies.filter(mov=>mov.imdbRating > '8.5' && mov.genre ==='Drama')
+console.log(dramaMoviesimdb);
 // Filter the movies to create an array of action movies starring Leonardo DiCaprio.
+let actionMovies = movies.filter(mov=>mov.genre =='Action' && mov.actors.includes('Leonardo DiCaprio'));
 
+console.log(actionMovies)
 // c. Chaining:
 
 // Chain operations to find all drama movies featuring Christian Bale.
-
+let chaDramaMovies = movies.filter(mov=>mov.genre =='Drama').filter(mov=> mov.actors.includes('Christian Bale'));
+console.log(chaDramaMovies);
 // Chain operations to find all drama movies featuring Tim Robbins.
+
+let chaDramaMoviess = movies.filter(mov=>mov.genre =='Drama').filter(mov=> mov.actors.includes('Tim Robbins'));
+console.log(chaDramaMoviess);
